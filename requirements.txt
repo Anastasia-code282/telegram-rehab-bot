@@ -1,4 +1,4 @@
 pyTelegramBotAPI
-schedule
 python-dotenv
+flask
 
