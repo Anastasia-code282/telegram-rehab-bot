@@ -5,8 +5,11 @@ import threading
 import schedule
 import time
 
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-bot = telebot.TeleBot('7576831775:AAGQOmo-sV37htksEyY3UgYVFlA3mGMyc74')
+bot = telebot.TeleBot(os.getenv('TELEGRAM_TOKEN')) 
 
 # Дата операції
 surgery_date = datetime(2025, 7, 8)
